@@ -1,0 +1,4 @@
+root:
+  child1: child1value
+  child2:
+    $ref: ./sample1-child2.yml
