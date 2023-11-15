@@ -1,0 +1,9 @@
+root:
+  child1: child1value
+  child2:
+    grandchild1: grandchild1value
+    grandchild2: grandchild2value
+    grandchild3: grandchild3value
+    grandchild4:
+      grandgrandchild1: grandgrandchild1value
+      grandgrandchild2: grandgrandchild2value
