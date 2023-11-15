@@ -16,4 +16,10 @@ func main() {
 
 	fmt.Printf("Input file: %s\n", inputFile)
 	fmt.Printf("Output directory: %s\n", outputDir)
+
+	err = generate(inputFile, outputDir)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+		os.Exit(1)
+	}
 }
