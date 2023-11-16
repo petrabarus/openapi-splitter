@@ -1,0 +1,21 @@
+child1:
+  gchild1: gchild1value
+  gchild2:
+    ggchild1: gchild1value
+    ggchild2: gchild2value
+    ggchild3: gchild3value
+    ggchild4:
+      gggchild1: gggchild1value
+      gggchild2: gggchild2value
+child2:
+  gchild3:
+    ggchild5: ggchild1value
+    ggchild6:
+      gggchild3: gggchild3value
+      gggchild4: gggchild4value
+    gchild7: gchild7value
+  gchild4:
+    - gchild4value1
+    - gchild4value2
+    - gchild4value3
+
