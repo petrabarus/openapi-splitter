@@ -1,0 +1,46 @@
+[project]
+name = "openapi-splitter"
+version = "0.1.0"
+
+description = "Split OpenAPI files into smaller files"
+
+readme = "README.md"
+
+requires-python = ">=3.11"
+
+license = {file = "LICENSE.md"}
+
+authors = [
+  {name = "Petra Barus", email = "petra.barus@gmail.com" }
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+
+  "License :: OSI Approved :: BSD 3-Clause License",
+
+  "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+  "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+test = ["pytest", "coverage",  "pytest-cov", "coverage", "pyinstaller", "flake8"]
+
+[project.urls]  # Optional
+"Homepage" = "https://github.com/petrabarus/openapi-splitter"
+"Bug Reports" = "https://github.com/petrabarus/openapi-splitter/issues"
+
+
+[project.scripts]
+sample = "sample:main"
+
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
